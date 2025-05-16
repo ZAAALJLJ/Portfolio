@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { init } from '@emailjs/browser';
+
+// Initialize EmailJS
+init("c_l3SCXhBxY5u23kC");
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
