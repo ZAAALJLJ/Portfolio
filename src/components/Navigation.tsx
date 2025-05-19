@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import profileImage from '../assets/profile.jpg';
 
 const Navigation: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,9 +28,20 @@ const Navigation: React.FC = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-xl font-bold bg-gradient-to-r from-theme-purple to-theme-purple-dark text-transparent bg-clip-text"
+            className="flex items-center gap-3"
           >
-            Zyrach
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="w-8 h-8"
+            >
+              <svg width="32" height="32" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="512" height="512" rx="128" fill="#13111C"/>
+                <path d="M128 128L384 384M128 384H384" stroke="#9D8CFF" stroke-width="64" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </motion.div>
+            <span className="text-xl font-bold bg-gradient-to-r from-theme-purple to-theme-purple-dark text-transparent bg-clip-text">
+              Zyrach Adrian
+            </span>
           </motion.div>
           
           {/* Mobile menu button */}

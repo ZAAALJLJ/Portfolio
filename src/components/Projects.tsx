@@ -27,7 +27,7 @@ const Projects: React.FC = () => {
       title: 'CHAVATAR: AI-Integrated SDG Awareness Platform',
       description: 'An innovative online platform built with C# that promotes awareness of the Sustainable Development Goals (SDGs) through AI technology. Features include AI-driven conversations with a speaking and moving avatar, user-to-user interactions with interactive avatars, and online forums focused on sustainable development goals.',
       image: chavatarPreview,
-      techStack: ['C#', '.NET', 'Gemini API', 'WPF', 'AI Integration'],
+      techStack: ['C#', '.NET', 'Gemini API', 'AI Integration'],
       link: 'https://github.com/ZAAALJLJ/SpeakingChatbot'
     },
     {
